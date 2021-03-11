@@ -62,7 +62,7 @@
 
    ```
 
-#### 2020/3/9
+#### 2021/3/9
 
 1. Forming a magic square (HackerRank, Medium)
    URL: https://www.hackerrank.com/challenges/magic-square-forming/problem
@@ -95,7 +95,7 @@
      return minCost
    ```
 
-#### 2020/3/10
+#### 2021/3/10
 
 1. Strings: Making Anagrams (HackerRank, Easy)
    URL: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
@@ -135,3 +135,54 @@
 
       return cnt
    ```
+
+#### 2021/3/11
+
+1. Sherlock and the Valid String (HackerRank, Medium)
+   URL: https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+   Reflect: Didn't think of the case like "aabbccd" at first
+   **Solution:**
+
+   ```python
+   def isValid(s):
+    c = Counter(s)
+    d = Counter(c.values())
+    if len(d) == 1:
+        return "YES"
+    elif len(d) > 2:
+        return "NO"
+    else:
+        k1,k2 = d.keys()
+        if d[k1] == 1 and (k1 - 1 == k2 or k1 - 1 == 0):
+            # k1-1=0: deal with the case like "aabbccd"
+            return "YES"
+        elif d[k2] == 1 and (k2 -1 == k1 or k2 - 1 == 0):
+            return "YES"
+        else:
+            return "NO"
+
+    '''
+    Wrong Solution
+    ---------------------------
+    cnt = 0
+    c = Counter(s)
+    minNum = min(c.values())
+    for v in c.values():
+        cnt += v - minNum
+        if cnt > 1:
+            return "NO"
+
+    return "YES"
+    '''
+   ```
+
+#### 2021/3/11
+
+1. Integer to Roman (LeetCode, Easy)
+   URL: https://leetcode.com/explore/challenge/card/march-leetcoding-challenge-2021/589/week-2-march-8th-march-14th/3667/
+
+2. Count and Say (LeetCode, Medium, String)
+   URL: https://leetcode.com/problems/count-and-say/
+   Solution: [Key Point]: Recursive way
+   Similar problem: Special String Again (HackerRank, Medium)
+   URL: https://www.hackerrank.com/challenges/special-palindrome-again/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
