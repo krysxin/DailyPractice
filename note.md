@@ -1,5 +1,17 @@
 # Practice Diary
 
+## Catalogue
+
+- [Array](#array)
+- [Strings](#strings)
+- [Linked List](#linked-list)
+- [Trees](#trees)
+- [Sorting and Searching](#sorting-and-searching)
+- [Dynamic Programming](#dynamic-programming)
+- [Implementation](#design)
+- [Math](#math)
+- [Others](#others)
+
 ## Top Interview Questions
 
 #### 2021/3/1
@@ -22,7 +34,7 @@
 #### 2021/3/8
 
 1. Extra Long Factorials 大数阶乘(HackerRank)
-   URL: https://www.hackerrank.com/challenges/extra-long-factorials/problem
+   URL: <https://www.hackerrank.com/challenges/extra-long-factorials/problem>
    Note: 改行なし出力: print(str, end="")
    backwark for loop: for i in range(num, -1, -1)
 
@@ -65,7 +77,7 @@
 #### 2021/3/9
 
 1. Forming a magic square (HackerRank, Medium)
-   URL: https://www.hackerrank.com/challenges/magic-square-forming/problem
+   URL: <https://www.hackerrank.com/challenges/magic-square-forming/problem>
    Note: the center of a 3\*3 magic square is 5.  
     There are only 8 patterns of a 3\*3 magic square.
    Match the given s s with all the possible patterns and calculate the minimum cost.
@@ -98,7 +110,7 @@
 #### 2021/3/10
 
 1. Strings: Making Anagrams (HackerRank, Easy)
-   URL: https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+   URL: <https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>
 
    **Solution:**
 
@@ -139,7 +151,7 @@
 #### 2021/3/11
 
 1. Sherlock and the Valid String (HackerRank, Medium)
-   URL: https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+   URL: <https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>
    Reflect: Didn't think of the case like "aabbccd" at first
    **Solution:**
 
@@ -179,10 +191,12 @@
 #### 2021/3/11
 
 1. Integer to Roman (LeetCode, Easy)
-   URL: https://leetcode.com/explore/challenge/card/march-leetcoding-challenge-2021/589/week-2-march-8th-march-14th/3667/
+   URL: <https://leetcode.com/explore/challenge/card/march-leetcoding-challenge-2021/589/week-2-march-8th-march-14th/3667/>
 
 2. Count and Say (LeetCode, Medium, String)
-   URL: https://leetcode.com/problems/count-and-say/
+   URL: <https://leetcode.com/problems/count-and-say/>
    Solution: [Key Point]: Recursive way
    Similar problem: Special String Again (HackerRank, Medium)
-   URL: https://www.hackerrank.com/challenges/special-palindrome-again/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings
+   URL: <https://www.hackerrank.com/challenges/special-palindrome-again/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings>
+
+3. Picking Numbers (HackerRank, Medium)
